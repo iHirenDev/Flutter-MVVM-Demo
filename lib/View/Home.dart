@@ -28,7 +28,7 @@ class _HomeState extends State<Home> {
       if(vm.movies == null) {
       return Align(child: CircularProgressIndicator());
     } else if(vm.movies.isEmpty) {
-      return Align(child: Text("No movies found."));
+      return Align(child: Text("Cannot fetch movies."));
     } else {
       return _movieList(context);
     }
